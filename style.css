@@ -1,8 +1,14 @@
 body {
-    background-color: #808080;
+    background-color: #306bac;
     color: black ;
 }
 
-.cor{
+img{
+    border-radius: 40px;
+}
+
+.estilodescricao{
     color: #091608e1;
+    font-family: 'PT Sans', sans-serif;
+
 }
