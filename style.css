@@ -1,18 +1,51 @@
 body {
-    background-color: #306bac;
+    background-color: rgba(139, 139, 139, 0.959);
     color: black ;
     font-family: 'PT Sans', sans-serif;
 }
 
 img{
-    border-radius: 10px;
+    border-radius: 30px;
+}
+
+ul {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.summary{
+    font-size: 23px;
 }
 
 a{
-    text-decoration: none;
+    text-shadow: #306bac;
+    text-decoration: solid;
+    color: #233b61;
 }
 
-.botao{
-    padding: 15px 30px;
-    border-radius: 20;
+#cor{
+    background-color: rgb(192, 192, 192);
+}
+
+.links{
+    display: block;
+    height: 50px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    clear: both;
+    background-color: #c9d1da;
+    border-radius: 10px;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
