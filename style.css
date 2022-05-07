@@ -1,55 +1,54 @@
 body {
-    background-color: rgba(139, 139, 139, 0.959);
-    color: black ;
-    font-family: 'PT Sans', sans-serif;
+  background-color: rgba(139, 139, 139, 0.959);
+  color: black;
+  font-family: "PT Sans", sans-serif;
 }
 
-img{
-    border-radius: 30px;
+img {
+  border-radius: 30px;
 }
 
-h1{
-    font-family: 'Montserrat', sans-serif;
+h1 {
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-.summary{
-    font-size: 23px;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-a{
-    text-shadow: #306bac;
-    text-decoration: solid;
-    color: #233b61;
+.summary {
+  font-size: 23px;
 }
 
-#cor{
-    background-color: rgb(192, 192, 192);
+a {
+  text-shadow: #306bac;
+  text-decoration: solid;
+  color: #233b61;
 }
 
-.links{
-    display: block;
-    height: 50px;
-    width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 5px;
-    text-align: center;
-    line-height: 50px;
-    text-decoration: none;
-    clear: both;
-    background-color: #c9d1da;
-    border-radius: 10px;
+#cor {
+  background-color: rgb(192, 192, 192);
+}
 
+.links {
+  display: block;
+  height: 50px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  clear: both;
+  background-color: #c9d1da;
+  border-radius: 10px;
 }
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
