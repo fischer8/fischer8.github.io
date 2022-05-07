@@ -8,6 +8,10 @@ img{
     border-radius: 30px;
 }
 
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
 ul {
     display: table;
     margin-right: auto;
