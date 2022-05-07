@@ -1,14 +1,18 @@
 body {
     background-color: #306bac;
     color: black ;
+    font-family: 'PT Sans', sans-serif;
 }
 
 img{
-    border-radius: 40px;
+    border-radius: 10px;
 }
 
-.estilodescricao{
-    color: #091608e1;
-    font-family: 'PT Sans', sans-serif;
+a{
+    text-decoration: none;
+}
 
+.botao{
+    padding: 15px 30px;
+    border-radius: 20;
 }
