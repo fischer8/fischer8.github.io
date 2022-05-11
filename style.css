@@ -1,54 +1,89 @@
-body {
-  background-color: rgba(139, 139, 139, 0.959);
-  color: black;
-  font-family: "PT Sans", sans-serif;
+body{
+    background-color: rgba(139, 139, 139, 0.959);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
-img {
-  border-radius: 30px;
+h1.ide{
+    font-family: 'Bree Serif', serif;
+    margin: 10px;
+    font-size: 60px;
 }
 
-h1 {
-  font-family: "Montserrat", sans-serif;
+h2{
+    font-size: 32px;
 }
 
-ul {
-  display: table;
-  margin-right: auto;
-  margin-left: auto;
+.select{
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
-.summary {
-  font-size: 23px;
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 1% 2%;
+    border-radius: 8px;
+    background-color: #c6cacf;
+    font-family: 'Bree Serif', serif;
 }
 
-a {
-  text-shadow: #306bac;
-  text-decoration: solid;
-  color: #233b61;
+a:hover{
+    background-color: aquamarine;
+    border: 1px solid aqua;
+    font-weight: bolder;
 }
 
-#cor {
-  background-color: rgb(192, 192, 192);
+.paragraph{
+    text-align: center;
+    width: 66%;
+    font-size: 23px;
+    margin: 20px auto;
 }
 
-.links {
-  display: block;
-  height: 50px;
-  width: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: 5px;
-  text-align: center;
-  line-height: 50px;
-  text-decoration: none;
-  clear: both;
-  background-color: #c9d1da;
-  border-radius: 10px;
+li{
+    width: fit-content;
 }
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
+ul{
+    width: fit-content;
+    margin: auto;
+    font-size: 23px;  
+}
+
+.spacer{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.spacer2{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.inlineblock div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.stylo{
+    text-align: center;
+}
+
+.container{
+    height: fit-content;
+    display: flexbox;
+    width: 80%; 
+    height: 400px;
+    width: 640px;
+    margin: auto;
+    margin-bottom: 80px;
+    vertical-align: middle;
+    border: 0.1px solid rgba(139, 139, 139, 0.959);
+}
+
+.container2{
+    width: fit-content;
+    font-size: 23px;
 }
