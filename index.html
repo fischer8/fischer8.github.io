@@ -5,76 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@300&display=swap"
-        rel="stylesheet">
-    <title>Henrique Fischer</title>
+    <title>Mobile Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <div class="stylo">
-        <div class="inlineblock">
-            <div>
-                <h1 class="ide" style="width: fit-content;">Hello World</h1>
-            </div>
-            <div>
-                <img style="vertical-align: middle;" src="brazil.png" alt="earth">
-                <img style="vertical-align: middle; width: 48px;" src="handshake.png" alt="handshake">
-                <img style="vertical-align: middle; width: 55px;" src="earth.png" alt="brazil">
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="select">
-        <a href="#apresentacao">Apresentação</a>
-        <a href="#idiomas">Idiomas</a>
-        <a href="#conhecimento">Conhecimento</a>
-        <a href="#contato">Contato</a>
-    </div>
-    <hr>
-    <h1 style="margin-top: 80px; margin-bottom: 40px; text-align: center;" id="apresentacao">Henrique Fischer Ruiz</h1>
-    <div class="container">
-        <img src="eu.jpeg" style="border-radius: 20px; max-width: 300px; float: left; margin-right: 13px;"
-            alt="Foto do Henrique">
-        <p class="container2">
-            Me chamo Henrique tenho 23 anos e sou apaixonado por resolver problemas, comecei a estudar
-            programação
-            a 1
-            ano e posso afirmar que é isso que eu quero pra minha vida, gosto de tarefas que necessitem de
-            objetividade
-            e uso da lógica, gosto de entender realmente como as coisas funcionam e busco aprender todos os
-            dias.
-        </p>
-    </div>
-    <hr width="45%" id="conhecimento">
-    <div class="spacer2">
-        <h2 class="stylo">Conhecimentos</h2>
-        <p class="paragraph">
-            &emsp;Conclui o ensino médio no Colégio COC, e atualmente estou cursando a faculdade FIAP no periodo
-            noturno, meu
-            diploma será de bacharelado em Engenharia da Computação e iniciei em 2022 o curso de desenvolvimento web
-            full stack da Trybe com duração de um ano.
-        </p>
-    </div>
-    <hr width="45%">
-    <div class="stylo spacer2">
-        <h2 id="idiomas">Idiomas</h2>
-        <ul>
-            <li>Inglês fluente</li>
-            <li>Espanhol básico</li>
-            <li>Português nativo</li>
-        </ul>
-    </div>
-    <hr>
-    <div class="select" id="contato">
-        <a href="https://www.linkedin.com/in/henrique-fischer-92797a239/" target="_blank">Linkedin</a>
-        <a href="https://github.com/fischer8" target="_blank">Github</a>
-        <a href="mailto:fischxr@gmail.com">Gmail</a>
-    </div>
-    <hr>
-    <div style="text-align: center;">
-        <h4>Este site está sendo atualizado conforme meu conhecimento aumenta</h4>
-    </div>
+    <header class="container mt-5">
+        <h1>
+            Controle de Gastos
+        </h1>
+    </header>
+    <section class="container mt-5">
+        <section class="mb-3 d-none" id="display">
+            <form class="d-flex flex-row" role="search">
+                <input id="busca" class="form-control-lg mt-4 me-2 w-50 h-50 d-inline-block" type="search" placeholder="buscar" aria-label="buscar">
+                <label for="filtroSelect">
+                    <span class="form-text text-muted ms-2">Filtro</span>
+                    <select id="filtroSelect" class="me-2 form-control-lg w-100">
+                        <option value="titulo">Filtrar por Titulo</option>
+                        <option value="data">Filtrar por Data</option>
+                        <option value="valor">Filtrar por Valor</option>
+                    </select>    
+                </label>
+                <label for="filtroSelect2" class="w-15 me-2 ms-2">
+                    <span class="form-text text-muted ms-2">Categoria</span>
+                    <select id="filtroSelect2" class="me-2 form-control-lg w-100">
+                        <option selected value="todos">Todas</option>
+                        <option value="mercado">Mercado</option>
+                        <option value="lazer">Lazer</option>
+                        <option value="comida">Comida</option>
+                        <option value="compra">Compra Online</option>
+                    </select>
+                </label>
+                <button id="busca-btn" class="btn btn-outline-success mt-3 h-60" type="submit">Filtrar</button>
+            </form>
+        </section>
+        <section class="d-flex">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-plus-lg"></i>
+                    Cadastrar Despesa
+                </button>
+                <section>
+                    <p class="mt-3 ms-3 d-none" id="total"></p>
+                </section>
+        </section>
+        <section id="despesas" class="row mt-3">
+        </section> 
+    </section>
+    <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <section class="modal-dialog">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Tarefa</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                    <form>
+                        <section class="mb-3">
+                            <label for="titulo" class="form-label">Título</label>
+                            <input type="text" class="form-control" id="titulo" aria-describedby="titulo">
+                        </section>
+                        <section class="mb-3">
+                            <label for="valor" class="form-label">Valor</label>
+                            <input type="number" step="0.01" class="form-control" id="valor">
+                        </section>
+                        <section class="mb-3">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <select class="form-select" aria-label="categoria" id="categoria">
+                                <option>Mercado</option>
+                                <option>Lazer</option>
+                                <option>Comida</option>
+                                <option>Compra online</option>
+                            </select>
+                        </section>
+                    </form>
+                </section>
+                <section class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button id="salvar" type="button" class="btn btn-primary">Salvar</button>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
