@@ -101,7 +101,8 @@ function cadastrar(){
 }
 
 function validar(valor, campo){
-  if(valor == ""){
+  const condicao = +valor < 0.01
+  if(valor == "" || condicao){
     campo.classList.add("is-invalid")
     campo.classList.remove("is-valid")
     return false
