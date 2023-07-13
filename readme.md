@@ -6,5 +6,5 @@ https://fischer8.github.io/
 
 Frameworks
 - Html
-- Javascript
 - Bootstrap
+- Javascript
